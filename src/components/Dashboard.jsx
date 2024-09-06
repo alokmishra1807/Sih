@@ -28,7 +28,7 @@ const Dashboard = () => {
         >
           View All Options
         </label>
-        <main className="p-4 flex-1">
+        <main className="p-4 flex-1 bg-gradient-to-r from-blue-400 via-gray-500">
           <Outlet /> {/* Render nested routes here */}
         </main>
       </div>

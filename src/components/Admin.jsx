@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import main from "/main.jpg";
 
 const Admin = () => {
@@ -11,44 +12,67 @@ const Admin = () => {
 
   return (
     <>
-      <div className="hero bg-base-200 min-h-screen flex items-center justify-center">
+      <div className="hero bg-gradient-to-r from-blue-400 via-gray-500  min-h-screen flex items-center justify-center">
         <div className="container mx-auto px-4">
-          <div className="hero-content flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
+          <motion.div 
+            className="hero-content flex flex-col lg:flex-row gap-6 lg:gap-12 items-center"
+            initial={{ opacity: 0, y: 50, x:0 }}
+            animate={{ opacity: 1, y: 0, x:10 }}
+            transition={{ duration: 1 }}
+          >
             
-            {/* Image Section */}
-            <div className="w-full max-w-xs md:max-w-md lg:max-w-sm shrink-0 shadow-2xl">
+            {/* Image Section with Animation */}
+            <motion.div 
+              className="w-full max-w-xs md:max-w-md lg:max-w-sm shrink-0 shadow-2xl"
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+            >
               <img 
                 src={main} 
                 className="w-full h-[200px] md:h-[300px] lg:h-[328px] rounded-md object-cover" 
                 alt="main" 
               />
-            </div>
+            </motion.div>
             
-            {/* Form Section */}
-            <div className="card bg-base-100 w-full max-w-xs md:max-w-md lg:max-w-md shrink-0 shadow-2xl">
-              <form className="card-body">
+            {/* Form Section with Subtle Animation */}
+            <motion.div 
+              className="card bg-gray-100 w-full max-w-xs md:max-w-md lg:max-w-md shrink-0 shadow-2xl rounded-lg overflow-hidden"
+              initial={{ x: -100, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <div className="card-body p-6">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Email</span>
+                    <span className="label-text font-semibold">Email</span>
                   </label>
-                  <input type="email" placeholder="email" className="input input-bordered" required />
+                  <input type="email" placeholder="email" className="input input-bordered input-primary focus:outline-none focus:ring-2 focus:ring-gray-500 transition" required />
                 </div>
-                <div className="form-control">
+                <div className="form-control mt-4">
                   <label className="label">
-                    <span className="label-text">Password</span>
+                    <span className="label-text font-semibold">Password</span>
                   </label>
-                  <input type="password" placeholder="password" className="input input-bordered" required />
-                  <label className="label">
-                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                  <input type="password" placeholder="password" className="input input-bordered input-primary focus:outline-none focus:ring-2 focus:ring-gray-500 transition" required />
+                  <label className="label mt-2">
+                    <a href="#" className="label-text-alt link link-hover text-gray-600">Forgot password?</a>
                   </label>
                 </div>
                 <div className="form-control mt-6">
-                  <button type="button" className="btn btn-primary w-full" onClick={handleLogin}>Login</button>
+                  <motion.button 
+                    type="button" 
+                    className="btn btn-primary w-full bg-gray-700 hover:bg-gray-800"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    onClick={handleLogin}
+                  >
+                    Login
+                  </motion.button>
                 </div>
-              </form>
-            </div>
+              </div>
+            </motion.div>
             
-          </div>
+          </motion.div>
         </div>
       </div>
     </>
