@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.hero11 {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Black overlay with opacity */
+    url('/main.jpg'); /* Background image - adjust path accordingly */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 100vh; /* Ensures it takes up the full viewport height */
+  padding: 20px; /* Adds padding to the container */
+}
+
