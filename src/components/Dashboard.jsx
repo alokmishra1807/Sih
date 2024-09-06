@@ -68,7 +68,7 @@ const Dashboard = () => {
               className="flex items-center space-x-2"
             >
               <FaUsers />
-              <span>Manage Miners</span>
+              <span>Next Shift</span>
             </button>
           </li>
           <li className='font-semibold text-lg'>

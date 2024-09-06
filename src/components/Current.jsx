@@ -2,16 +2,25 @@ import React, { useState } from 'react';
 import main2 from "/main2.png";
 
 const Current = () => {
+  const defaultTime = "08:00"; // 8:00 AM in 24-hour format
+
   const [isChecked, setIsChecked] = useState(false);
   const [rowChecks, setRowChecks] = useState([
-    { safety: false, entry: false },
-    { safety: false, entry: false },
-    { safety: false, entry: false }
+    { safety: false, entry: false, time: defaultTime },
+    { safety: false, entry: false, time: defaultTime },
+    { safety: false, entry: false, time: defaultTime }
   ]);
 
   const handleCheckboxChange = (rowIndex, checkboxType) => {
     const updatedRowChecks = rowChecks.map((row, index) => 
       index === rowIndex ? { ...row, [checkboxType]: !row[checkboxType] } : row
+    );
+    setRowChecks(updatedRowChecks);
+  };
+
+  const handleTimeChange = (rowIndex, time) => {
+    const updatedRowChecks = rowChecks.map((row, index) => 
+      index === rowIndex ? { ...row, time } : row
     );
     setRowChecks(updatedRowChecks);
   };
@@ -72,7 +81,12 @@ const Current = () => {
                     </td>
                     <td className="text-xs md:text-sm lg:text-base">Block {rowIndex + 1}</td>
                     <td>
-                      <input type="time" className="input input-bordered w-full" />
+                      <input 
+                        type="time" 
+                        className="input input-bordered w-full" 
+                        value={row.time}
+                        onChange={(e) => handleTimeChange(rowIndex, e.target.value)}
+                      />
                     </td>
                     <td>
                       <label>
