@@ -11,21 +11,21 @@ const Admin = () => {
 
   return (
     <>
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero bg-base-200 min-h-screen flex items-center justify-center">
         <div className="container mx-auto px-4">
-          <div className="hero-content flex flex-col lg:flex-row-reverse gap-6 lg:gap-12 items-center">
+          <div className="hero-content flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
             
             {/* Image Section */}
-            <div className="w-full max-w-md lg:max-w-sm shrink-0 shadow-2xl">
+            <div className="w-full max-w-xs md:max-w-md lg:max-w-sm shrink-0 shadow-2xl">
               <img 
                 src={main} 
-                className="w-full h-[200px] lg:h-[328px] rounded-md object-cover" 
+                className="w-full h-[200px] md:h-[300px] lg:h-[328px] rounded-md object-cover" 
                 alt="main" 
               />
             </div>
             
             {/* Form Section */}
-            <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl">
+            <div className="card bg-base-100 w-full max-w-xs md:max-w-md lg:max-w-md shrink-0 shadow-2xl">
               <form className="card-body">
                 <div className="form-control">
                   <label className="label">
@@ -43,7 +43,7 @@ const Admin = () => {
                   </label>
                 </div>
                 <div className="form-control mt-6">
-                  <button type="button" className="btn btn-primary" onClick={handleLogin}>Login</button>
+                  <button type="button" className="btn btn-primary w-full" onClick={handleLogin}>Login</button>
                 </div>
               </form>
             </div>
