@@ -1,24 +1,24 @@
 import React from 'react';
-import logo1 from "/logo1.jpg";
+import removes from "/removed.png";
 
 const Navbar = () => {
   return (
     <>
-      <div className=" bg-gray-400 w-full flex flex-col lg:flex-row justify-between items-center lg:h-auto py-4 px-4">
+      <div className="bg-gray-400 w-full flex flex-col lg:flex-row justify-between items-center lg:h-auto py-4 px-4">
         
         {/* Logo and Heading Section */}
         <div className="flex flex-col lg:flex-row items-center w-full lg:w-auto">
           <a className="btn btn-ghost flex-shrink-0 mb-2 lg:mb-0">
-            <img className="h-[3rem] w-[10rem]" src={logo1} alt="Logo" />
+            <img className="h-[3rem] w-[10rem]" src={removes} alt="Logo" />
           </a>
 
-          <div className="text-center lg:text-left lg:ml-4">
-            <h1 className="font-extrabold text-blue-900 text-lg sm:text-xl md:text-2xl">
-              Admin Portal
-            </h1>
+          <div className="text-center lg:text-left lg:ml-4 mt-2 lg:mt-0">
             <p className="text-sm sm:text-base md:text-lg">
               SAFETY AND EFFICIENCY MEASURES FOR MINERS
             </p>
+            <h1 className="font-extrabold text-blue-900 text-lg sm:text-xl md:text-2xl mt-2 lg:mt-0">
+              Admin Portal
+            </h1>
           </div>
         </div>
 

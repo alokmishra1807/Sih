@@ -12,7 +12,7 @@ const Admin = () => {
 
   return (
     <>
-      <div className="hero bg-gradient-to-r from-blue-400 via-gray-500  min-h-screen flex items-center justify-center">
+      <div className="hero bg-gradient-to-r from-blue-400 via-gray-500 to min-h-screen flex items-center justify-center">
         <div className="container mx-auto px-4">
           <motion.div 
             className="hero-content flex flex-col lg:flex-row gap-6 lg:gap-12 items-center"
