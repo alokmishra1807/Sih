@@ -8,8 +8,8 @@ const Navbar = () => {
         
         {/* Logo and Heading Section */}
         <div className="flex flex-col lg:flex-row items-center w-full lg:w-auto">
-          <a className="btn btn-ghost flex-shrink-0 mb-2 lg:mb-0">
-            <img className="h-[3rem] w-[10rem]" src={removes} alt="Logo" />
+          <a className="btn btn-ghost flex-shrink-0 mb-8">
+            <img className="h-[5rem] w-[10rem] object-contain" src={removes} alt="Logo" />
           </a>
 
           <div className="text-center lg:text-left lg:ml-4 mt-2 lg:mt-0">
@@ -29,10 +29,7 @@ const Navbar = () => {
             <li>
               <details>
                 <summary className="font-extrabold text-blue-900">About Us</summary>
-                <ul className="bg-base-100 rounded-t-none p-2">
-                  <li><a></a></li>
-                  <li><a>J</a></li>
-                </ul>
+              
               </details>
             </li>
           </ul>

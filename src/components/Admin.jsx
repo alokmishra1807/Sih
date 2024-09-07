@@ -44,10 +44,13 @@ const Admin = () => {
             >
               <div className="card-body p-6">
                 <div className="form-control">
+               
+                    <span className="label-text font-semibold text-xl">Admin Portal</span>
+                  
                   <label className="label">
-                    <span className="label-text font-semibold">Email</span>
+                    <span className="label-text font-semibold">Username</span>
                   </label>
-                  <input type="email" placeholder="email" className="input input-bordered input-primary focus:outline-none focus:ring-2 focus:ring-gray-500 transition" required />
+                  <input type="username" placeholder="Username" className="input input-bordered input-primary focus:outline-none focus:ring-2 focus:ring-gray-500 transition" required />
                 </div>
                 <div className="form-control mt-4">
                   <label className="label">
