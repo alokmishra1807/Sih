@@ -25,12 +25,12 @@ const Navbar = () => {
         {/* Navigation Links */}
         <div className="flex-none mt-4 lg:mt-0">
           <ul className="menu menu-horizontal px-1">
-            <li><a className="font-extrabold text-blue-900">Link</a></li>
+            <li><a className="font-extrabold text-blue-900">Contact Us</a></li>
             <li>
               <details>
-                <summary className="font-extrabold text-blue-900">Parent</summary>
+                <summary className="font-extrabold text-blue-900">About Us</summary>
                 <ul className="bg-base-100 rounded-t-none p-2">
-                  <li><a>S</a></li>
+                  <li><a></a></li>
                   <li><a>J</a></li>
                 </ul>
               </details>
