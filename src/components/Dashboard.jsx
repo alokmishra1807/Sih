@@ -3,7 +3,7 @@ import { Outlet, Link, useNavigate } from 'react-router-dom';
 import { MdDashboard } from "react-icons/md";
 import { IoAddCircle } from "react-icons/io5";
 import { FaMapMarkerAlt, FaUsers } from "react-icons/fa";
-import logo1 from "/logo1.jpg";
+import seam from "/seam1.png";
 
 const Dashboard = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false); // State to control drawer
@@ -40,7 +40,7 @@ const Dashboard = () => {
             <div className='flex flex-row items-center'>
               {/* Make the logo clickable */}
               <button onClick={() => handleLinkClick("/dashboard")} className="h-full w-full">
-                <img className="h-full w-full" src={logo1} alt="Logo" />
+                <img className="h-full w-full" src={seam} alt="Logo" />
               </button>
             </div>
           </div>
