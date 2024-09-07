@@ -14,7 +14,7 @@ const Navbar = () => {
 
           <div className="text-center lg:text-left lg:ml-4 mt-2 lg:mt-0">
             <p className="text-sm sm:text-base md:text-lg">
-              SAFETY AND EFFICIENCY ASSISTANCE AND MANAGEMENT
+              SAFETY AND EFFICIENCY ASSISTANCE FOR MINERS 
             </p>
             <h1 className="font-extrabold text-blue-900 text-lg sm:text-xl md:text-2xl mt-2 lg:mt-0">
               Admin Portal

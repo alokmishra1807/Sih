@@ -38,7 +38,10 @@ const Dashboard = () => {
         <ul className="menu bg-base-200 text-base-content min-h-full w-80 p-4">
           <div className='mb-4'>
             <div className='flex flex-row items-center'>
-              <img className="h-full w-full" src={logo1} alt="Logo" />
+              {/* Make the logo clickable */}
+              <button onClick={() => handleLinkClick("/dashboard")} className="h-full w-full">
+                <img className="h-full w-full" src={logo1} alt="Logo" />
+              </button>
             </div>
           </div>
           <hr className="my-4" />
